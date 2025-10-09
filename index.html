@@ -7,199 +7,403 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <title>Hello, world!</title>
+    <style>
+        section{
+            padding: 60px 0;
+        }
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <h2>JipJap jop</h2>
-    <h3>prrrr</h3>
-    <h2 class="h5"></h2>
+    <!-- Navbar -->
+     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-xxl">
+            <a href="#intro" class="navbar-brand">
+                <span class="fw-bold text-secondary">
+                    <i class="bi bi-car-front-fill"></i>
+                    Porsche
+                </span>
+            </a>
+            <!-- Toggle button for mobile nav-->
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+             </button>
 
-    <!-- display headings-->
-     <h1 class="display-1">Display 1 heading</h1>
-     <h1 class="display-4">Display 4 heading</h1>
-     <h1 class="display-6">Display 6 heading</h1>
+             <!-- navbar links -->
+              <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#topics">Inside</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item ms-2 d-none d-md-inline">
+                        <a class="btn btn-secondary" href="#pricing">Buy</a>
+                    </li>
+                </ul>
+              </div>
+        </div>
+     </nav>
 
-     <!-- Paragraph-->
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, eius? Fugit a doloribus unde expedita corporis reprehenderit explicabo, in quos quasi distinctio architecto eos magni? Repudiandae ducimus ipsam aliquam recusandae.</p>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quasi laudantium neque quisquam inventore nulla officiis in adipisci. Velit officia ratione a natus aperiam temporibus illum quae voluptatum tempora expedita.</p>
-      <p class="lead text-center">Hello</p>
-      <p class="lead text-end">Hello</p>
-      <p class="lead text-start">Hello</p>
+    <!-- Main image & intro text -->
+     <section id="intro">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 text-center text-md-start">
+                    <h1>
+                        <div class="display-2">black-belt</div>
+                        <div class="display-5 text-muted">Your coding skills</div>
+                    </h1>
+                    <p class="lead my-4 text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
+                    <!-- Open sidebar / offcanvas -->
+                     <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
+                        Explore other items
+                     </a>
+                </div>
+                <div class="col-md-5 text-center d-none d-md-block">
+                <!-- Tooltip -->
+                 <span class="tt" data-bs-placement="bottom" title="Porsche car">
+                    <img class="img-fluid" src="/assets/porsche.jpg" alt="porsche cover">
+                 </span>
 
-      <!-- text decoration & font weight -->
-       <p class="text-decoration-underline">Underline</p>
-       <p class="text-decoration-line-through">line through</p>
-       <p class="fw-bold">Bold</p>
-       <small>small text</small>
+                </div>
+            </div>
+        </div>
+     </section>
 
-       <!-- Colors -->
-        <p class="text-primary">Primary</p>
-        <p class="text-secondary">Secondary</p>
-        <p class="text-info">Info</p>
-        <p class="text-warning">Warning</p>
-        <p class="text-success">Success</p>
-        <p class="text-danger">Danger</p>
-        <p class="text-muted">Muted</p>
-
-        <!-- bg colors -->
-         <p class="text-white bg-primary">White text on primary bg</p>
-         <p class="text-white bg-secondary">White text on secondary bg</p>
-         <p class="text-light bg-danger">White on danger bg</p>
-
-         <!-- Basic button -->
-          <h2>Buttons</h2>
-          <button class="btn btn-primary"> primary button</button>
-          <button class="btn btn-secondary"> secondary button</button>
-
-          <!-- anchor tags as buttons -->
-           <h2>Links as buttons</h2>
-           <a href="#" class="btn btn-info">info</a>
-           <a href="#" class="btn btn-success">Success</a>
-
-           <!-- Button sizes -->
-            <h2>Button sizes</h2>
-            <button class="btn btn-lg btn-danger">large danger</button>
-            <button class="btn btn-sm btn-warning">small warning</button>
-
-            <!-- Button styles -->
-             <h2>Button styles</h2>
-             <button class="btn btn-outline-primary">Outline primary button</button>
-             <button class="btn btn-outline-secondary btn-lg">large outline secondary button</button>
-
-            <!-- Button groups -->
-             <h2>Button groups</h2>
-             <div class="btn-group">
-                <a href="#" class="btn btn-primary">Button 1</a>
-                <a href="#" class="btn btn-warning">Button 2</a>
-                <a href="#" class="btn btn-success">Button 3 </a>
-             </div>
-
-            <!-- margine and padding -->
-             <div class="bg-primary m-1 p-1">small margine and padding</div>
-             <div class="bg-primary m-5 p-5">large margine and padding</div>
-             <div class="bg-primary my-3 px-5">margine in y direction, padding in x direction</div>
-             <div class="bg-primary mt-3 mb-4 ms-5 me-1 ps-5 pt-5 pe-2 pb-1">m & p for each direction</div>
-            
-            <!-- borders -->
-             <div class="m-3 p-3 border">default border</div>
-             <div class="m-3 p-3 border-top border-end">individiual borders</div>
-             <div class="m-3 p-3 border-start border-success">border success color at start</div>
-             <div class="m-3 p-3 border-start border-danger border-5">thicker border</div>
-             <div class="m-3 p-3 rounded border border-5">rounded corners</div>
-             <div class="m-3 p-3 rounded-pill bg-primary">rounded pill corners</div>
-
-            <!-- box shadow -->
-             <div class="m-3 p-3 shadow-sm">element with small box shadow</div>
-             <div class="m-3 p-3 shadow-lg">element with large box shadow</div>
-
-            <!-- font weight -->
-             <p class="fw-bold">bold text</p>
-             <p class="fw-bolder">bolder text</p>
-             <p>normal text</p>
-             <p class="fw-light">light text</p>
-             <p class="fw-italic">italic text</p>
-             <p class="fw-italic fw-light">italic and light text</p>
-
-             <!-- Container -->
-             <div class="container my-5">
-                <h2>normal container</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At mollitia nulla temporibus dolor incidunt obcaecati. Mollitia ipsa vel repudiandae itaque est culpa neque iure, labore, veritatis sapiente quidem ipsum ea!</p>
-             </div>
-
-             <div class="container-fluid">
-                <h2>fluid container</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor eius sint illo possimus pariatur. Autem cum totam repellat veritatis nulla dignissimos, perspiciatis atque alias, voluptas explicabo perferendis harum odio magni!</p>
-             </div>
-
-             <div class="container-lg my-5">
-                <h2>100% width until lg screens, then container</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae amet, omnis quibusdam nulla ea nobis saepe deserunt facere, excepturi quas sed delectus necessitatibus consequatur, expedita pariatur doloremque fuga optio. Assumenda.</p>
-             </div>
-
-             <div class="container-xl my-5">
-                <h2>100% width until xl screens, then container</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum ratione, sequi quo eos, nemo impedit ex repellendus omnis minus quas totam iure voluptate natus rem, iusto asperiores. Possimus, voluptate assumenda.</p>
-             </div>
-
-             <!-- grid layout -->
-
-             <div class="container-lg my-5">
-                <h2>basic grid</h2>
-                <div class="row">
-                    <div class="col">
-                        <div class="p-5 bg-primary text-light">col 1</div>
-                    </div>
-                    <div class="col">
-                        <div class="p-5 bg-primary text-light">col 2</div>
-                    </div>
-                    <div class="col">
-                        <div class="p-5 bg-primary text-light">col 3</div>
-                    </div>
-                    <div class="col">
-                        <div class="p-5 bg-primary text-light">col 4</div>
+    <!-- Pricing plans -->
+     <section id="pricing" class="bg-light mt-5">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Pricing plans</h2>
+                <p class="lead text-muted">Choose a pricing plan</p>
+            </div>
+            <div class="row my-5 align-items-center justify-content-center g-5">
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-0">
+                        <div class="card-body text-center py-4">
+                            <h4 class="car-title">start edition</h4>
+                            <p class="lead card-subtitle">eBook download</p>
+                            <p class="display-5 my-4 text-primary fw-bold">€100</p>
+                            <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy now</a>
+                        </div>
                     </div>
                 </div>
-             </div>
-
-             <div class="container-lg my-5">
-                <h2>column widths</h2>
-                <div class="row">
-                <div class="col-6">
-                        <div class="p-5 bg-primary text-light">col 1</div>
-                    </div>
-                    <div class="col-3">
-                        <div class="p-5 bg-primary text-light">col 2</div>
-                    </div>
-                    <div class="col-3">
-                        <div class="p-5 bg-primary text-light">col 3</div>
+            <div class="col-9 col-lg-4">
+                    <div class="card border-primary border-2">
+                        <div class="card-header text-center text-primary">Most popular</div>
+                        <div class="card-body text-center py-5">
+                            <h4 class="car-title">start edition</h4>
+                            <p class="lead card-subtitle">eBook download</p>
+                            <p class="display-4 my-4 text-primary fw-bold">€100</p>
+                            <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy now</a>
+                        </div>
                     </div>
                 </div>
-             </div>
-
-             <div class="container-lg my-5">
-                <h2>responsive column width</h2>
-                <div class="row">
-                <div class="col-sm-4 col-lg-6">
-                        <div class="p-5 bg-primary text-light">col 1</div>
-                    </div>
-                    <div class="col-sm-4 col-lg-3">
-                        <div class="p-5 bg-primary text-light">col 2</div>
-                    </div>
-                    <div class="col-sm-4 col-lg-3">
-                        <div class="p-5 bg-primary text-light">col 3</div>
+                    <div class="col-8 col-lg-4 col-xl-3">
+                        <div class="card border-0">
+                        <div class="card-body text-center py-4">
+                            <h4 class="car-title">start edition</h4>
+                            <p class="lead card-subtitle">eBook download</p>
+                            <p class="display-5 my-4 text-primary fw-bold">€100</p>
+                            <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy now</a>
+                        </div>
                     </div>
                 </div>
-             </div>
+            </div>
+        </div>
+     </section>
 
-             <div class="container-lg my-5">
-                <h2>justifying columns</h2>
-                <div class="row justify-content-center">
-                    <div class="col-md-3">
-                        <div class="p-5 bg-primary text-light"> col 1</div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="p-5 bg-primary text-light"> col 1</div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="p-5 bg-primary text-light"> col 1</div>
+    <!-- Topics at a glance -->
+     <section id="topics">
+        <div class="container-md">
+            <div class="text-center">
+            <h2>Inside</h2>
+            <p class="lead text-muted">a quick glance</p>
+        </div>
+
+        <div class="row my-5 g-5 justify-content-around align-items-center">
+            <div class="col-6 col-lg-4">
+                <img src="/assets/bmw.jpg" class="img-fluid" alt="bmw">
+            </div>
+
+            <div class="col-lg-6">
+
+            <!-- Accordion-->
+             <div class="accordion" id="chapters">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1">
+                            Chapter 1 - your first web page
+                        </button>
+                    </h2>
+                    <div id="chapter-1" class="accordion-collapse collapse" aria-labelledby="heading-1" data-bs-parent="#chapters">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
                     </div>
                 </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-2">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-2" aria-expanded="true" aria-controls="chapter-2">
+                            Chapter 1 - your first web page
+                        </button>
+                    </h2>
+                    <div id="chapter-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#chapters">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-3">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-3" aria-expanded="true" aria-controls="chapter-3">
+                            Chapter 1 - your first web page
+                        </button>
+                    </h2>
+                    <div id="chapter-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#chapters">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-4">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-4" aria-expanded="true" aria-controls="chapter-4">
+                            Chapter 1 - your first web page
+                        </button>
+                    </h2>
+                    <div id="chapter-4" class="accordion-collapse collapse" aria-labelledby="heading-4" data-bs-parent="#chapters">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
              </div>
+          </div>
+        </div>
+     </section>
 
+    <!-- Reviews list -->
+     <section id="reviews" class="bg-light">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2><i class="bi bi-book-half pe-2"></i>Reviews</h2>
+                <p class="lead">prprprprprprp</p>
+            </div>
 
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-8">
+                    <div class="list-group">
+                        <div class="list-group-item py-3">
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h5 class="mb-1">Imeline asi</h5>
+                            <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <small>Review by Peep</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h5 class="mb-1">Imeline asi</h5>
+                            <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <small>Review by Peep</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <h5 class="mb-1">Imeline asi</h5>
+                            <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <small>Review by Peep</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <h5 class="mb-1">Imeline asi</h5>
+                            <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <small>Review by Peep</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
 
+     <!-- Contact form -->
 
+     <!-- Form-control, form-label, form-select, input-group, input-group-text -->
+      <section id="contact">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Get in touch</h2>
+                <p class="lead">Questions to ask?</p>
+            </div>
+
+            <div class="row justify-content-center my-5">
+
+                <div class="col-lg-6">
+                    <form>
+                        <label for="email" class="form-label">Email address</label>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope"></i>
+                            </span>
+                            <input type="email" class="form-control" id="email" placeholder="e.g peep@example.com">
+                        <!-- Tooltip -->
+                         <span class="input-group-text">
+                            <span class="tt" data-bs-placement="bottom" title="Enter an email address">
+                            <i class="bi bi-question-circle text-muted"></i>
+                            </span>
+                         </span>
+                        </div>
+
+                        <label for="name" class="form-label">Name:</label>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-person"></i>
+                            </span>
+                            <input type="text" class="form-control" id="name" placeholder="e.g peep">
+                        <!-- Tooltip -->
+                         <span class="input-group-text">
+                            <span class="tt" data-bs-placement="bottom" title="Enter a name">
+                            <i class="bi bi-question-circle text-muted"></i>
+                            </span>
+                         </span>
+                        </div>
+
+                        <label for="subject" class="form-label">What is your question?</label>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-right-dots"></i>
+                            </span>
+                            <select class="form-select" id="subject">
+                                 <option value="pricing" selected>Pricing</option>
+                                 <option value="content">Content</option>
+                                 <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-floating mb-4 mt-5">
+                             <textarea id="query" class="form-control" style="height: 100px;"></textarea>
+                             <label for="query">Your query...</label>
+                        </div>
+
+                        <div class="mb-4 text-center">
+                            <button type="submit" class="btn btn-secondary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+      </section>
+
+      <!-- Get updates / model trigger -->
+       <section class="bg.light">
+        <div class="container">
+            <div class="text-center">
+                <h2>Stay in the loop</h2>
+                <p class="lead">Get the latest updates</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <p class="text-muted my-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">
+                        Register for updates
+                    </button>
+                </div>
+            </div>
+        </div>
+       </section>
+
+      <!-- Modal itself -->
+       <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Get the latest updates</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <label for="modal-email" class="form-label">Your email address:</label>
+                    <input type="email" class="form-control" id="modal-email" placeholder="e.g peep@example.com">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+       </div>
+
+       <!-- Offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-lable">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="sidebar-lable">Other items</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores obcaecati dolores facere aperiam quas ipsam officiis quia expedita, suscipit repudiandae iure. Veniam possimus amet est rem nostrum temporibus debitis quae!</p>
+                <!-- Dropdown -->
+                 <div class="dropdown mt-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="item-dropdown" data-bs-toggle="dropdown">
+                        Choose an item
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="item-dropdown">
+                        <li><a href="#" class="dropdown-item">Nissan</a></li>
+                        <li><a href="#" class="dropdown-item">Toyota</a></li>
+                        <li><a href="#" class="dropdown-item">Subaru</a></li>
+                    </ul>
+                 </div>
+            </div>
+        </div>
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
+    <script>
+        const tooltips = document.querySelectorAll('.tt')
+        tooltips.forEach(t => {
+            new bootstrap.Tooltip(t)
+        })
+    </script>
   </body>
 </html>
