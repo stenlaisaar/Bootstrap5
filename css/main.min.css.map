@@ -94,5 +94,5 @@
         "../node_modules/bootstrap/scss/utilities/_api.scss"
     ],
     "names": [],
-    "file": "main.css"
+    "file": "main.min.css"
 }
